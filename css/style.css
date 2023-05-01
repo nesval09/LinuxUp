@@ -1,0 +1,595 @@
+* { 
+    /* padding=0; */
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer {
+    background-color: #2d4059;
+    min-height: 50px;
+    margin: 0.5rem;
+    min-width: 400;
+    color: #f2f2f2;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 0;    
+}
+
+header, footer {
+  width: 40rem;
+  height: 4rem;
+}
+
+/* Cuerpo Títulos */
+h1 {
+    font-size: 2rem;
+  }
+  
+  
+h2 {
+    font-size: 1.4rem;
+  }
+  
+ 
+h3 {
+    font-size: 1.14rem;
+  }
+
+a:link {
+    color: orange;
+  }
+  
+a:visited {
+    color: rgb(177, 57, 20);
+  }
+
+main{
+    min-height: 200px;
+    overflow: auto;
+    margin-top: 5.5rem;
+}
+
+header {
+    box-shadow: 0 0 0.5rem (83 78 76 / 50%);
+}
+
+main>div {
+    min-height: 180px;
+    margin: 0.5rem;
+    float: left;
+    width: 65%;
+    
+}
+
+
+.header-menubar a.activo_inicio {
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* contenido principal */
+
+.contenedor {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .contenido_principal {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .tituloGrande {
+        font-size: 32px;
+        margin: 0 auto;
+        margin-top: 1rem;
+        text-align: center;
+      }
+           
+      .parrafoGrande {
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: justify;
+      }
+      .secciones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0.5rem;
+        width: 100;
+      }
+      
+      .secciones > img {
+        width: 100%;
+        height: auto;
+        border: 5px solid #ff8c00;
+      }
+      
+      .secciones article {
+        background-color: rgba(45, 64, 89, 0.7);
+        padding: 0.5rem;        
+        flex: 1;
+        min-height: 20px;
+        margin-top: 0rem;
+      }
+
+.secciones article img {
+        width: 100%;
+        height: auto;
+        border: 5px solid #ff8c00;
+    }
+
+
+.secciones article h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+      }
+      
+.secciones article p {
+        text-align: justify;
+      }
+      
+.fuenteMayor {
+    font-size: 17px;
+    line-height: 1.4;
+    }
+
+h1, h2, h3 {
+        font-weight: bold;
+        color: #ff8c00;
+      }
+    
+/* logo y menú */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: #2d4059;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
+    z-index: 999;
+  }
+  
+
+.header-logo {
+    float: left;
+    width: auto;
+    transform: scale(0.8);
+    margin: 0.5rem;    
+    margin-top: auto;
+  
+}
+
+.header-titulo h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0.5rem;
+    margin: 0 20px 0 0;
+    padding-right: 0.5rem;
+}
+
+.header-titulo h1 {
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.header-menubar {
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: auto;
+    transform: translateY(-40%);
+}
+
+.header-menubar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-menubar li {
+    list-style: none;
+    margin: 0 0.5rem;
+
+}
+
+header::after {
+    content: "";
+    margin-bottom: 0;
+    clear: both;
+    display: table;}
+
+.header-menubar a { 
+    color: #f5f5f5;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: normal;
+
+}
+
+.header-menubar a:hover {
+    color: #ff8c00;
+
+}
+
+.header-menubar li a {
+    font-size: 1.1rem;
+    background: transparent;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    outline: 0.5px groove rgba(216, 133, 8, 0.767);
+}
+  
+
+.linuxup {
+    font-weight: bold;
+    color: #ff8c00;
+}
+
+
+/* aside */
+
+main > aside {
+    min-height: 180px;
+    height: auto;
+    max-width: 500px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    padding-top: 0;
+    float: left;
+    text-align: justify;
+    
+  }
+  
+  .imagenes {
+    transform: scale(1);
+    width: 100%;
+    max-width: 500px;    
+    height: auto;
+    border: 5px solid #ff8c00;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside h3 {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+
+/* footer */
+
+footer {
+  background-color: #2d4059;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+  opacity: 0.95;
+  color: #fff;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyrigth {
+  margin: 0;
+  font-size: 13px;
+}
+
+.slogan {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.twitter,
+.mail {
+  margin: 0 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.twitter:hover,
+.mail:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-33%);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0rem;
+  box-shadow: 0 2px 8px rgba(224, 138, 24, 0.8);
+}
+
+/* ESTILO PARA SUBPÁGINAS */
+
+/* ESTILO Consultas.html */
+
+.header-menubar a.activo_consultas {
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sub_contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.img_consultas {
+    width: auto;
+    max-width: 620px;    
+    height: auto;
+    border: 5px solid #ff8c00;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.parrafoSubpaginas {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+
+.sub_contenido_principal {
+  width: 60%;
+  margin-left: 8%;
+}
+
+.sub_contenido_secundario {
+  width: 30%;
+  margin-top: 2rem;
+  margin-left: 2%;
+  padding: 1rem;
+  background-color: f9f9f9;
+  position: relative;
+}
+
+.sub_contenido_secundario img {
+  position: absolute;
+  border: 5px solid #ff8c00;
+  bottom: -450px;
+  right: 2.2rem;
+  width: 450px;
+}
+
+/* Formulario*/
+
+.formulario {
+  margin-top: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.form-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea.form-control {
+  height: calc(4*1.5rem +2 * 1rem +2 * 0.375rem + 2px);
+}
+
+.btn-primary {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.btn-primary {
+  border-color: orange;
+  background-color: #2d4059;
+}
+
+/* ESTILO PARA SUBPÁGINAS (equipos_viejos.html) */
+
+.header-menubar a.activo_equipos_viejos {
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.parrafoSubpaginas1 {
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.img_equiposviejos1 { 
+  transform: scale(0.9);
+}
+
+/* ESTILO PARA SUBPÁGINAS (instalar_linux.html) */
+
+.header-menubar a.activo_instalar_linux {
+  background-color: #ff8c00;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sub_contenido_secundario2 {
+  width: 30%;
+  margin-top: 0.5rem;
+  margin-left: 0;
+  margin-right: 4.2rem;
+  padding: 1rem;
+  background-color: f9f9f9;
+  position: relative;
+}
+
+.parrafoSubpaginas2 {
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+  /* Elementos para tratar de que sea responsivo */
+
+/* Estilos para dispositivos móviles (menores a 640px) */
+
+@media only screen and (max-width: 639px) {
+  header {
+    height: 80px;
+  }
+  
+  header img {
+    margin-top: 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    margin-left: 0;
+  }
+  
+  .header-menubar {
+    margin-top: 1.5rem;
+  }
+  
+  .header-menubar li a {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 2rem;
+  }
+  
+  .footer-bottom {
+    font-size: 0.6rem;
+    padding-top: 0.1rem;
+  }
+}
+
+/* Estilos para dispositivos móviles (menores a 768px) */
+@media only screen and (max-width: 768px) {
+ 
+  header {
+    height: 100px;
+    position: relative;
+  }
+  
+  header img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 1.3rem;
+    padding-bottom: 0rem;
+    padding-left: 0.5rem;
+    padding-top: 2.5rem;
+    margin-left: 0;
+  }
+  
+  .header-menubar {
+    float: right;
+    position: absolute;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    padding: auto;
+  }
+
+  .header-menubar li a {
+      font-size: 1rem;
+      padding: 0rem 0rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 3rem;
+    padding-left: 0rem;
+    padding-right: 1rem;
+    position: relative;
+  }
+  
+  .footer-bottom {
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+  }
+}
+
+/* Estilos para tablets (entre 640px y 1279px) */
+@media only screen and (min-width: 640px) and (max-width: 1279px) {
+  header {
+    height: 100px;
+  }
+  
+  header h1 {
+    font-size: 1.4rem;
+    padding-top: 2.5rem;
+  }
+  
+  .header-menubar {
+    margin-top: 1.5rem;
+  }
+  
+  .header-menubar li a {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding: 3rem;
+  }
+  
+  .footer-bottom {
+    font-size: 0.7rem;
+    padding-top: 0.2rem;
+  }
+}
