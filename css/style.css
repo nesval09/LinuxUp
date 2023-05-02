@@ -434,6 +434,7 @@ textarea.form-control {
 .btn-primary {
   border-color: orange;
   background-color: #2d4059;
+  color: #fff;
 }
 
 /* ESTILO PARA SUBPÁGINAS (equipos_viejos.html) */
