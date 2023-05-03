@@ -387,7 +387,7 @@ footer {
 
 .sub_contenido_secundario {
   width: 30%;
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-left: 2%;
   padding: 1rem;
   background-color: f9f9f9;
@@ -412,15 +412,17 @@ footer {
   width: 100%;
   border-radius: 0.5rem;
   margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
   padding: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .form-label {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
+
 
 textarea.form-control {
   height: calc(4*1.5rem +2 * 1rem +2 * 0.375rem + 2px);
@@ -478,119 +480,126 @@ textarea.form-control {
   line-height: 1.9;
 }
 
-  /* Elementos para tratar de que sea responsivo */
+/* Elementos para tratar de que sea responsivo */
 
 /* Estilos para dispositivos móviles (menores a 640px) */
-
 @media only screen and (max-width: 639px) {
   header {
-    height: 80px;
+  height: 80px;
   }
   
   header img {
-    margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
   }
   
   header h1 {
-    font-size: 1.2rem;
-    padding-top: 2rem;
-    margin-left: 0;
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  margin-left: 0;
   }
   
   .header-menubar {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
   }
   
   .header-menubar li a {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
   }
-
+  
   footer {
-    font-size: 0.9rem;
-    padding: 2rem;
+  font-size: 0.9rem;
+  padding: 2rem;
   }
   
   .footer-bottom {
-    font-size: 0.6rem;
-    padding-top: 0.1rem;
+  font-size: 0.6rem;
+  padding-top: 0.1rem;
   }
-}
-
-/* Estilos para dispositivos móviles (menores a 768px) */
-@media only screen and (max-width: 768px) {
- 
+  }
+  
+  /* Estilos para dispositivos móviles (menores a 768px) */
+  @media only screen and (max-width: 768px) {
+  
   header {
-    height: 100px;
-    position: relative;
+  height: 100px;
+  position: relative;
   }
   
   header img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1.5rem;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
   }
   
   header h1 {
-    font-size: 1.3rem;
-    padding-bottom: 0rem;
-    padding-left: 0.5rem;
-    padding-top: 2.5rem;
-    margin-left: 0;
+  font-size: 1.3rem;
+  padding-bottom: 0rem;
+  padding-left: 0.5rem;
+  padding-top: 2.5rem;
+  margin-left: 0;
   }
   
   .header-menubar {
-    float: right;
-    position: absolute;
-    margin-top: 0rem;
-    margin-right: 0rem;
-    padding: auto;
+  float: right;
+  position: absolute;
+  margin-top: 0rem;
+  margin-right: 0rem;
+  padding: auto;
   }
-
+  
   .header-menubar li a {
-      font-size: 1rem;
-      padding: 0rem 0rem;
+  font-size: 1rem;
+  padding: 0rem 0rem;
   }
-
+  
   footer {
-    font-size: 1rem;
-    padding: 3rem;
-    padding-left: 0rem;
-    padding-right: 1rem;
-    position: relative;
+  font-size: 1rem;
+  padding: 3rem;
+  padding-left: 0rem;
+  padding-right: 1rem;
+  position: relative;
   }
   
   .footer-bottom {
-    font-size: 0.7rem;
-    padding-top: 0.2rem;
+  font-size: 0.7rem;
+  padding-top: 0.2rem;
   }
-}
-
-/* Estilos para tablets (entre 640px y 1279px) */
-@media only screen and (min-width: 640px) and (max-width: 1279px) {
+  }
+  
+  /* Estilos para tablets (entre 640px y 1279px) */
+  @media only screen and (min-width: 640px) and (max-width: 1279px) {
   header {
-    height: 100px;
+  height: 100px;
+  }
+  
+  header img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
   }
   
   header h1 {
-    font-size: 1.4rem;
-    padding-top: 2.5rem;
+  font-size: 1.4rem;
+  padding-top: 2.5rem;
   }
   
   .header-menubar {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
   }
   
   .header-menubar li a {
-    font-size: 1rem;
+  font-size: 1rem;
   }
-
+  
   footer {
-    font-size: 1rem;
-    padding: 3rem;
+  font-size: 1rem;
+  padding: 3rem;
   }
   
   .footer-bottom {
-    font-size: 0.7rem;
-    padding-top: 0.2rem;
+  font-size: 0.7rem;
+  padding-top: 0.2rem;
   }
-}
+  }
