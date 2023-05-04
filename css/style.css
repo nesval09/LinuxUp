@@ -274,7 +274,9 @@ main > aside {
     margin: 1rem 0;
     padding: 0.5rem;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    border: 0.1px ridge gray;
     text-align: center;
+    letter-spacing: 1px;   
   }
 
 /* footer */
