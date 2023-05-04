@@ -47,7 +47,7 @@ a:link {
   }
   
 a:visited {
-    color: rgb(177, 57, 20);
+    color: #ff7f00;
   }
 
 main{
@@ -479,6 +479,25 @@ textarea.form-control {
   font-size: 1.1rem;
   line-height: 1.9;
 }
+
+/* Estilo de animación */
+@keyframes animacion1 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplica animación a imágenes de class: animacion */
+.animacion {
+  animation-name: animacion1;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+ }
 
 /* Elementos para tratar de que sea responsivo */
 
