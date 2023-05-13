@@ -534,11 +534,11 @@ iframe[src^="https://www.youtube.com"] {
   /*Encabezado*/
   
     header {
-      width: 100%;
+      width: 96%;
     }
   
     .header-logo {
-      margin-left: -4.5rem;
+      margin-left: -4rem;
       transform: scale(0.5);
     }
   
@@ -553,7 +553,7 @@ iframe[src^="https://www.youtube.com"] {
     }
   
     .header-titulo h1 {
-      font-size: 1rem;
+      font-size: 0.9rem;
       margin-top: 0;
       
     }
@@ -562,9 +562,9 @@ iframe[src^="https://www.youtube.com"] {
       display: inline-block;
       justify-content: center;
       margin-top: 2.5rem;
-      margin-left: -39rem;
-      font-size: 1rem;
-      width: 10px;
+      margin-left: -37rem;
+      font-size: 1.2rem;
+      width: 50px;
     }
   
     .header-menubar ul {
@@ -577,19 +577,19 @@ iframe[src^="https://www.youtube.com"] {
     }
   
     .header-menubar li {
-      margin: 0.5rem;
-      margin-right: 0.5rem;
+      margin: 0.2rem;
+      margin-right: 0.3rem;
       text-align: center;
     }
   
     .header-menubar li a {
       display: block;
-      padding: 0.2rem 0.2rem;
+      padding: 0.3rem 0.3rem;
       border-radius: 5px;
       color: #f5f5f5;
       background-color: #2d4059;
       transition: all 0.3s;
-      font-size: 0.6rem;
+      font-size: 0.5rem;
       height: auto;
       margin: 0.1rem 0 0.4rem 0;
     }
@@ -724,7 +724,7 @@ iframe[src^="https://www.youtube.com"] {
 
   .video_responsivo {
     max-width: 100%;
-    height: 320px;
+    height: 260px;
   }
 
   /*Footer*/
@@ -1171,4 +1171,111 @@ iframe[src^="https://www.youtube.com"] {
   .mail {
     font-size: 11px;
   }
+}
+
+/* Responsividad para tablets de 1024x800px */
+
+@media only screen and (width: 1024px) and (height: 800px) {
+  
+  /* Encabezado */
+  header {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .header-logo {
+    margin-left: -1rem;
+    transform: scale(0.8);
+  }
+
+  .header-titulo {
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: -25rem;
+  }
+
+  .header-titulo h1 {
+    font-size: 1.3rem;
+    margin-left: -9
+    5rem;
+    margin-top: 0;
+  }
+
+  .header-menubar {
+    display: inline-block;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    width: 60px;
+  }
+
+  .header-menubar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding:0;
+  }
+
+  .header-menubar li {
+    margin: 0.4rem;
+    text-align: center;
+  }
+
+  .header-menubar li a {
+    display: block;
+    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+    border-radius: 5px;
+    color: #f5f5f5;
+    background-color: #2d4059;
+    transition: all 0.3s;
+    font-size: 0.7rem;
+  }
+
+  /* Resto del body */
+
+  .sub_contenido_secundario img {
+    border: 5px solid #ff8c00;
+    max-width: fit-content;
+    width: 120%;
+    margin-top: 15rem;
+    margin-bottom: 0;
+    margin-right: 0;
+    position: estatic;
+    }
+
+  .img_equiposviejos1 {
+    border: 5px solid #ff8c00;
+    max-width: fit-content;
+    width: 110%;
+    margin-top: 1rem;
+    position: estatic;
+    }
+  /* ... */
+
+  /* Footer */
+  footer {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-derechos {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 10px;
+    width: 100%;
+    margin: auto;
+  }
+
 }
