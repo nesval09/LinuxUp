@@ -16,12 +16,9 @@ El objetivo de LinuxUP! es ofrecer información básica y útil sobre GNU/Linux,
 
 El proyecto está en desarrollo y aún no se ha publicado oficialmente. Actualmente, estamos trabajando en la construcción de las diferentes secciones del sitio web, la implementación de funcionalidades y, sobre todo, la corrección de errores.
 
-## Líder de proyecto y colaboradores
+## Líder de proyecto
 
-- Néstor Valazza
-- Gisela Peloc
-- Ernesto Arévalo
-- Lautaro Santillán
+nesval09
 
 ## Cómo contribuir
 
